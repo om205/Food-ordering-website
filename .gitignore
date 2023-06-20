@@ -1,0 +1,6 @@
+topics.md
+node_modules
+.parcel-cache
+dist
+build
+.env

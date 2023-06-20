@@ -1,0 +1,42 @@
+:root {
+  --lcol: #aaa;
+  --dcol: #888;
+}
+
+div[theme="light"] {
+  background-color: var(--lcol);
+  opacity: 0.5;
+}
+
+div[theme="dark"] {
+  background-color: var(--dcol);
+  opacity: 0.5;
+}
+
+.rectangle {
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  width: 80%;
+  margin: 10px auto;
+  height: 10px;
+}
+
+.shimmer {
+  background-color: #eee;
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
